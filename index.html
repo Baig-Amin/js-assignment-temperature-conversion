@@ -30,7 +30,8 @@
         <div class="container">
             <div class="row pt-md-5">
                 <div class="col-md-6 text-end">
-                    <button type="button" onclick="fahrenheit()" class="btn btn-secondary">&#176;C &#8594; F</button>
+                    <button type="button" onclick="fahrenheit()" class="btn btn-secondary">&#176;C &#8594;
+                        F</button>
                 </div>
                 <div class="col-md-6">
                     <button type="button" onclick="celcius()" class="btn btn-secondary">F &#8594; &#176;C</button>
@@ -42,25 +43,29 @@
     <div class="container-fluid" style="background-color: rgb(220, 247, 238);">
         <div class="row d-flex justify-content-around py-md-5">
 
-            <div class="col-md-2 border border-dark shadow p-3 mb-5 bg-body rounded text-center">
+            <div class="col-md-2 border border-dark shadow p-3 mb-5 bg-body rounded text-center" onclick="showDate1()"
+                style="cursor: pointer;">
                 <i class="fas fa-snowflake fa-2x"></i>
                 <h5>December - February</h5>
                 <p id="temperature1">High 22&#176;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Low 8&#176;C</p>
             </div>
 
-            <div class="col-md-2 border border-dark shadow p-3 mb-5 bg-body rounded text-center">
+            <div class="col-md-2 border border-dark shadow p-3 mb-5 bg-body rounded text-center" onclick="showDate2()"
+                style="cursor: pointer;">
                 <i class="fas fa-sun fa-2x"></i>
                 <h5>March - May</h5>
                 <p id="temperature2">High 30&#176;C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Low 20&#176;C</p>
             </div>
 
-            <div class="col-md-2 border border-dark shadow p-3 mb-5 bg-body rounded text-center">
+            <div class="col-md-2 border border-dark shadow p-3 mb-5 bg-body rounded text-center" onclick="showDate3()"
+                style="cursor: pointer;">
                 <i class="fas fa-wind fa-2x"></i>
                 <h5>June - August</h5>
                 <p id="temperature3">High 32&#176;C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Low 23&#176;C</p>
             </div>
 
-            <div class="col-md-2 border border-dark shadow p-3 mb-5 bg-body rounded text-center">
+            <div class="col-md-2 border border-dark shadow p-3 mb-5 bg-body rounded text-center" onclick="showDate4()"
+                style="cursor: pointer;">
                 <i class="fas fa-cloud-showers-heavy fa-2x"></i>
                 <h5>September - November</h5>
                 <p id="temperature4">High 31&#176;C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Low 16&#176;C</p>
@@ -70,8 +75,19 @@
     </div>
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-md-5 border border-dark shadow-lg pt-4">
+                <p id="outputDate">Click Any Card To See The Date</p>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="main.js">
     </script>
+
     <!-- Bootstrap JS boundle library  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
